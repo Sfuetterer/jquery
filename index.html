@@ -20,6 +20,17 @@
 </head>
 
 <body>
+
+  <form action="/search" method="GET">
+    Search for <input name="q">
+    <button type="submit">Search!</button>
+  </form> 
+
+  <form action="add-comment" method="POST">
+    <input name="comment">
+    <button type="submit">Add</button>
+  </form>
+  
 <div class="container">
   <h1 id="title" class="text-center">Welcome to my website.</h1>
   <div class="row">
@@ -129,7 +140,6 @@ let moviesList = [];
   //   $("button").on('click', function(e){ 
   //         $(e).remove();
   // })
-
 
 
 
